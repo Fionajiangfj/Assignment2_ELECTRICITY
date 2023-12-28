@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* main */
+main > div {
+    width: 40%;
+    margin: 0 auto;
+}
+
+/* h1 in main */
+h1 {
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+/* #form in main */
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form > label {
+    margin-bottom: 10px;
+}
+
+#form > input, select, button {
+    margin-bottom: 20px;
+    padding: 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+}
+
+#form > button {
+    background-color: #0d6efd;
+    color: white;
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#form > p[id="error-msg"] {
+    font-size: 13px;
+    color: red;
+}
+
+
+/* section */
+section > div {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    
+    width: 40%;
+    margin: 20px auto;
+    padding-top: 35px;
+    padding-bottom: 25px;
+}
+
+/* peak-usage in section */
+#peak-usage {
+    display: flex;
+    gap: 40px;
+
+    justify-content: center;
+    text-align: center;
+
+    color: #06283D;
+
+    margin-bottom: 30px;
+}
+
+#left-col {
+    border: 4px dashed #06283D;
+    border-radius: 10px;
+
+    padding: 0 20px;
+}
+
+#right-col {
+    border: 4px dashed #47B5FF;
+    border-radius: 10px;
+
+    padding: 0 20px;
+}
+
+.peak-usage-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.peak-usage-price {
+    font-size: 36px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+.hour-rate {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* other-fees in section */
+#other-fees {
+    background-color: #DFF6FF;
+    color: #06283D;
+
+    border: 1px solid #DFF6FF;
+    border-radius: 8px;
+
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 20px;
+}
+
+#other-fees > p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#other-fees span {
+    font-weight: 700;
+}
+
+/* btn-total in section */
+#btn-total {
+    display: block;
+
+    border: 1px solid #06283D;
+    border-radius: 8px;
+
+    background-color: #06283D;
+    color: white;
+
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+
+}
+
+#total-title {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#total-price {
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}

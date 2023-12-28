@@ -1,0 +1,100 @@
+<!-- Yan Jiang - 101490059 -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yan Jiang</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <script src="./js/index.js" defer="true"></script>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1>Electricity Bill Calculator</h1>
+                <div id="form">
+                    <label for="on-peak"
+                        >Enter kwh used during on-peak hours:</label
+                    >
+                    <input
+                        type="number"
+                        id="on-peak"
+                        placeholder="Enter on peak hours"
+                        step="0.01"
+                        min="0.00"
+                    />
+
+                    <label for="off-peak"
+                        >Enter kwh used during off-peak hours:</label
+                    >
+                    <input
+                        type="number"
+                        id="off-peak"
+                        placeholder="Enter off peak hours"
+                        step="0.01"
+                        min="0.00"
+                    />
+
+                    <label for="province">Province of residence:</label>
+                    <select name="province" id="province">
+                        <option disabled selected value="">
+                            Please select...
+                        </option>
+                        <option value="BC">British Columbia</option>
+                        <option value="ON">Ontario</option>
+                    </select>
+
+                    <p id="error-msg"></p>
+                    <button id="btn-cal">Calculate</button>
+                </div id="form">
+            </div>
+        </main>
+
+        <section>
+            <div>
+                <div id="peak-usage">
+                    <div id="left-col">
+                        <p class="peak-usage-title">ON PEAK USAGE</p>
+                        <p id="on-peak-price" class="peak-usage-price">$0.00</p>
+                        <p class="hour-rate">
+                            <span id="on-peak-usage">0</span>kwh at $0.132/hr
+                        </p>
+                    </div>
+
+                    <div id="right-col">
+                        <p class="peak-usage-title">OFF PEAK USAGE</p>
+                        <p id="off-peak-price" class="peak-usage-price">
+                            $0.00
+                        </p>
+                        <p class="hour-rate">
+                            <span id="off-peak-usage">0</span>kwh at $0.065/hr
+                        </p>
+                    </div>
+                </div>
+
+                <div id="other-fees">
+                    <p>
+                        · Total Consumption Charges:
+                        <span id="other-fees-total-csp">$0.00</span>
+                    </p>
+                    <p>
+                        · Sales Tax (13%):
+                        <span id="other-fees-tax">$0.00</span>
+                    </p>
+                    <p>
+                        · Provincial Rebate:
+                        <span id="other-fees-rebate">-$0.00</span>
+                    </p>
+                </div>
+
+                <button id="btn-total">
+                    <span id="total-title">TOTAL: </span>
+                    <span id="total-price">$0.00</span>
+                </button>
+            </div>
+        </section>
+    </body>
+</html>
